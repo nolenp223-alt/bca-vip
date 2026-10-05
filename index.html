@@ -1,1 +1,231 @@
-<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>BCA</title><p>Nothing here.</p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Bodybuilder's Core Academy</title>
+<meta name="description" content="Core control coaching for competitors: smaller waist, flatter core on stage. With IFBB Pro Dr. Dove, mom of 5.">
+<meta property="og:title" content="The Bodybuilder's Core Academy">
+<meta property="og:description" content="Core control coaching for competitors: smaller waist, flatter core on stage. With IFBB Pro Dr. Dove, mom of 5.">
+<meta property="og:image" content="https://bca.p7athletes.com/assets/dr-dove.jpg">
+<meta property="og:url" content="https://bca.p7athletes.com/">
+<meta name="theme-color" content="#f4f3f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/dr-dove.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#f4f3f0; --card:#ffffff; --ink:#15130f; --ink-2:#58544c; --line:#dcd8cf; --field:#8f8a80;
+  --gold:#d39e1c; --gold-text:#87610c; --on-gold:#15130f; --err:#b3261e; --ok:#2f6b3a;
+  --shadow:0 1px 2px rgba(21,19,15,.06),0 10px 30px rgba(21,19,15,.07);
+  --cond:"Barlow Condensed","DIN Condensed","Arial Narrow",sans-serif;
+  --sans:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:#121110; --card:#1c1a17; --ink:#f2efe8; --ink-2:#b8b2a7; --line:#34302a; --field:#7c766c;
+  --gold:#dcaa32; --gold-text:#e6b947; --on-gold:#15130f; --err:#ff8a80; --ok:#8fd19e;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 32px rgba(0,0,0,.35);
+  color-scheme:dark;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.5 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;min-height:64px;padding-top:env(safe-area-inset-top)}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px/1 var(--cond);letter-spacing:.06em}
+.mark i{display:block;width:28px;height:2px;background:var(--gold)}
+.top a.skip{font:600 15px/1 var(--sans);text-decoration:none;color:var(--ink-2);padding:14px 4px}
+.top a.skip:hover{color:var(--ink)}
+
+/* layout */
+.grid{display:grid;gap:28px;padding-bottom:40px}
+.photo{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#e6e7e6;aspect-ratio:4/5;box-shadow:var(--shadow)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:20% 0}
+.photo figcaption{position:absolute;right:12px;bottom:12px;background:rgba(21,19,15,.82);color:#f2efe8;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;border-radius:999px;display:flex;gap:8px;align-items:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.photo figcaption b{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+
+h1{margin:0;line-height:.92}
+h1 .the{display:block;font:italic 400 22px/1.2 var(--serif);color:var(--gold-text);margin-bottom:6px;letter-spacing:.01em}
+h1 .big{display:block;font:700 clamp(46px,14vw,84px)/.9 var(--cond);text-transform:uppercase;letter-spacing:.005em}
+.rule{width:56px;height:3px;background:var(--gold);border-radius:2px;margin:20px 0 18px}
+.lede{margin:0;font:400 20px/1.45 var(--serif);max-width:30ch}
+.by{margin:10px 0 0;color:var(--ink-2);font-size:16px}
+
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:14px 22px;border:0;border-radius:14px;font:700 17px/1.1 var(--sans);text-decoration:none;cursor:pointer;transition:transform .15s ease,background-color .2s ease,box-shadow .2s ease,opacity .2s ease}
+.btn:active{transform:scale(.985)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-gold{background:var(--gold);color:var(--on-gold);box-shadow:0 6px 18px rgba(211,158,28,.28)}
+.btn-gold:hover{background:#c8941a}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{opacity:.9}
+.btn[disabled]{opacity:.7;cursor:progress}
+.join{margin-top:26px}
+.join small{display:block;text-align:center;margin-top:10px;color:var(--ink-2);font-size:14px}
+
+/* login card */
+.card{margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 20px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.card h2{margin:0;font:700 26px/1.05 var(--cond);text-transform:uppercase;letter-spacing:.03em;display:flex;align-items:center;gap:10px}
+.card h2 svg{width:20px;height:20px;color:var(--gold-text)}
+.card p.sub{margin:6px 0 18px;color:var(--ink-2);font-size:16px}
+label.f{display:block;font:600 14px/1 var(--sans);letter-spacing:.04em;margin-bottom:8px}
+.pw{position:relative}
+.pw input{width:100%;font:500 18px/1.2 var(--sans);color:var(--ink);background:transparent;border:1.5px solid var(--field);border-radius:12px;padding:15px 64px 15px 14px;min-height:56px;transition:border-color .2s ease}
+.pw input:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-color:var(--ink)}
+.pw input[aria-invalid=true]{border-color:var(--err)}
+.pw .eye{position:absolute;right:4px;top:4px;bottom:4px;min-width:56px;border:0;background:transparent;color:var(--ink-2);font:600 14px/1 var(--sans);border-radius:10px;cursor:pointer}
+.pw .eye:hover{color:var(--ink)}
+.rem{display:flex;align-items:center;gap:12px;min-height:48px;margin:8px 0 6px;font-size:16px;color:var(--ink-2);cursor:pointer}
+.rem input{width:22px;height:22px;margin:0;accent-color:var(--gold);flex:none}
+.msg{min-height:24px;margin:10px 0 0;font-size:15px;color:var(--err)}
+.msg.busy{color:var(--ink-2)}
+.spin{width:18px;height:18px;border-radius:50%;border:2.5px solid currentColor;border-right-color:transparent;animation:sp .7s linear infinite;display:none}
+.btn[aria-busy=true] .spin{display:block}
+@keyframes sp{to{transform:rotate(360deg)}}
+.welcome h2{margin-bottom:4px}
+.linkbtn{display:block;width:100%;margin-top:8px;min-height:48px;background:none;border:0;color:var(--gold-text);font:600 15px/1 var(--sans);cursor:pointer;border-radius:10px}
+.linkbtn:hover{text-decoration:underline}
+.view{animation:in .35s ease both}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+[hidden]{display:none!important}
+
+footer{border-top:1px solid var(--line);padding:22px 0 calc(28px + env(safe-area-inset-bottom));color:var(--ink-2);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
+footer a{text-decoration:none;color:var(--ink-2);padding:6px 0}
+footer a:hover{color:var(--ink)}
+
+@media (min-width:720px){
+  .wrap{padding:0 32px}
+  .photo{aspect-ratio:auto;height:min(78vh,720px)}
+  .grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:center;padding:8px 0 56px}
+  .join{max-width:360px}
+  .join .btn{width:100%}
+  .card{max-width:440px;padding:28px 28px 24px}
+  .lede{font-size:22px}
+}
+@media (min-width:1000px){
+  h1 .the{font-size:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="/" aria-label="BCA home">BCA<i aria-hidden="true"></i></a>
+    <a class="skip" href="#login">Athlete login</a>
+  </header>
+
+  <main class="grid">
+    <figure class="photo">
+      <img src="/assets/dr-dove.jpg" width="1000" height="1500" alt="Dr. Dove, IFBB Pro, standing tall with one arm raised and a tight, controlled waist" fetchpriority="high" decoding="async">
+      <figcaption><b aria-hidden="true"></b>IFBB Pro Dr. Dove</figcaption>
+    </figure>
+
+    <section aria-labelledby="t">
+      <h1 id="t"><span class="the">The Bodybuilder's</span> <span class="big">Core Academy</span></h1>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="lede">Core control coaching for competitors: smaller waist, flatter core on stage.</p>
+      <p class="by">With IFBB Pro Dr. Dove, mom of 5.</p>
+
+      <div class="join">
+        <a class="btn btn-gold" href="https://www.skool.com/bca">Join the community
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4.5-4.5L15 10l-4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <small>Start free on Skool</small>
+      </div>
+
+      <div class="card" id="login" aria-labelledby="lt">
+        <form id="f" class="view" novalidate>
+          <h2 id="lt"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="3.5" y="8.5" width="13" height="9" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 8.5V6a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Athlete login</h2>
+          <p class="sub">For VIP athletes. Use the password Dove gave you.</p>
+          <label class="f" for="pw">Password</label>
+          <div class="pw">
+            <input id="pw" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-describedby="msg" required>
+            <button type="button" class="eye" id="eye" aria-controls="pw" aria-pressed="false">Show</button>
+          </div>
+          <label class="rem"><input id="rem" type="checkbox" checked> Remember me on this device</label>
+          <button class="btn btn-ink" id="go" type="submit"><span class="spin" aria-hidden="true"></span><span id="golabel">Open my program</span></button>
+          <p class="msg" id="msg" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="wb" class="welcome" hidden>
+          <h2 id="wt"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Welcome back</h2>
+          <p class="sub">Your program is saved on this device.</p>
+          <a class="btn btn-ink" id="wgo" href="/">Open my program</a>
+          <button type="button" class="linkbtn" id="other">Use a different password</button>
+        </div>
+        <noscript><p class="msg">Please turn on JavaScript to open your program.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; <span id="yr">2026</span> The Bodybuilder's Core Academy</span>
+    <a href="https://www.skool.com/bca">skool.com/bca</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var E=[{"s":"2eJJYzJ4ZfAg6HUk8ZzlGg==","i":"O7jt8U/LrC3vqrVG","c":"pWlUVMhCQjyMJaMrAUhSYG8y4Sj1BQ=="}], ITER=310000, K="bca-vip-pw";
+  var BAD="That password didn't work. Check it and try again.";
+  var $=function(id){return document.getElementById(id)};
+  var f=$("f"),pw=$("pw"),eye=$("eye"),rem=$("rem"),go=$("go"),gl=$("golabel"),msg=$("msg"),wb=$("wb"),wgo=$("wgo"),other=$("other");
+  $("yr").textContent=new Date().getFullYear();
+  function u(b){return Uint8Array.from(atob(b),function(x){return x.charCodeAt(0)})}
+  var ls={get:function(){try{return localStorage.getItem(K)}catch(_){return null}},set:function(v){try{localStorage.setItem(K,v)}catch(_){}},del:function(){try{localStorage.removeItem(K)}catch(_){}}};
+  var ss={set:function(v){try{sessionStorage.setItem(K,v)}catch(_){}},del:function(){try{sessionStorage.removeItem(K)}catch(_){}}};
+  async function tryEntry(e,p){
+    var b=await crypto.subtle.importKey("raw",new TextEncoder().encode(p),"PBKDF2",false,["deriveKey"]);
+    var k=await crypto.subtle.deriveKey({name:"PBKDF2",salt:u(e.s),iterations:ITER,hash:"SHA-256"},b,{name:"AES-GCM",length:256},false,["decrypt"]);
+    var s=new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:u(e.i)},k,u(e.c)));
+    if(!/^[a-z0-9-]+$/.test(s))throw new Error("bad");
+    return s;
+  }
+  function match(p){
+    if(!p||!E.length||!window.crypto||!crypto.subtle)return Promise.resolve(null);
+    return Promise.any(E.map(function(e){return tryEntry(e,p)})).catch(function(){return null});
+  }
+  function busy(on){go.disabled=on;go.setAttribute("aria-busy",on?"true":"false");gl.textContent=on?"Checking…":"Open my program";}
+  function show(view){
+    f.hidden=view!=="form";wb.hidden=view!=="welcome";
+    var el=view==="form"?f:wb;el.classList.remove("view");void el.offsetWidth;el.classList.add("view");
+  }
+  eye.addEventListener("click",function(){
+    var on=pw.type==="password";pw.type=on?"text":"password";eye.textContent=on?"Hide":"Show";eye.setAttribute("aria-pressed",on?"true":"false");pw.focus();
+  });
+  pw.addEventListener("input",function(){if(msg.textContent===BAD){msg.textContent="";pw.removeAttribute("aria-invalid");}});
+  f.addEventListener("submit",async function(ev){
+    ev.preventDefault();
+    var p=pw.value.trim();
+    if(!p){msg.className="msg";msg.textContent="Enter your password first.";pw.focus();return;}
+    if(!window.crypto||!crypto.subtle){msg.className="msg";msg.textContent="This browser can't open programs. Try Safari or Chrome.";return;}
+    busy(true);msg.className="msg busy";msg.textContent="";
+    var slug=await match(p);
+    if(!slug){busy(false);msg.className="msg";msg.textContent=BAD;pw.setAttribute("aria-invalid","true");pw.select();return;}
+    if(rem.checked){ls.set(p);ss.del();}else{ss.set(p);if(ls.get()===p)ls.del();}
+    gl.textContent="Opening…";
+    location.href="/"+slug+"/";
+  });
+  other.addEventListener("click",function(){ls.del();ss.del();show("form");pw.value="";pw.focus();});
+  window.addEventListener("pageshow",function(e){if(e.persisted)busy(false);});
+  (async function(){
+    var saved=ls.get();if(!saved)return;
+    var slug=await match(saved);
+    if(slug){wgo.href="/"+slug+"/";show("welcome");}
+    else if(window.crypto&&crypto.subtle)ls.del();
+  })();
+})();
+</script>
+</body>
+</html>
