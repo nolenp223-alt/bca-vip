@@ -7,13 +7,13 @@
 <meta name="description" content="Core control coaching for competitors: smaller waist, flatter core on stage. With IFBB Pro Dr. Dove, mom of 5.">
 <meta property="og:title" content="The Bodybuilder's Core Academy">
 <meta property="og:description" content="Core control coaching for competitors: smaller waist, flatter core on stage. With IFBB Pro Dr. Dove, mom of 5.">
-<meta property="og:image" content="https://bca.p7athletes.com/assets/dr-dove.jpg">
+<meta property="og:image" content="https://bca.p7athletes.com/assets/bca-cover.jpg">
 <meta property="og:url" content="https://bca.p7athletes.com/">
 <meta name="theme-color" content="#f4f3f0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="/assets/dr-dove.jpg">
+<link rel="preload" as="image" href="/assets/bca-cover.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap">
@@ -58,15 +58,16 @@ a{color:inherit}
 
 /* layout */
 .grid{display:grid;gap:22px;padding-bottom:32px}
-.photo{margin:0;position:relative;border-radius:20px;overflow:hidden;background:#cfd6cf;aspect-ratio:4/3;box-shadow:var(--shadow)}
-.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:42% 0}
+.photo{margin:0;position:relative;border-radius:20px;overflow:hidden;background:#cfd6cf;aspect-ratio:1400/788;background:#d39e1c;box-shadow:var(--shadow)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .js .photo img{opacity:0;transform:scale(1.015);transition:opacity .6s ease,transform 1.2s ease}
 .js .photo img.in{opacity:1;transform:none}
-@media (prefers-color-scheme:dark){.photo img{filter:brightness(.85)}.photo{background:#2a2c28}}
+
 .photo figcaption{position:absolute;right:12px;bottom:12px;background:rgba(21,19,15,.82);color:#f2efe8;font:600 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;border-radius:999px;display:flex;gap:8px;align-items:center;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .photo figcaption b{width:7px;height:7px;border-radius:50%;background:var(--gold)}
 
 h1{margin:0;line-height:.92}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 h1 .the{display:block;font:italic 400 21px/1.2 var(--serif);color:var(--gold-text);margin-bottom:4px;letter-spacing:.01em}
 h1 .big{display:block;font:700 clamp(46px,14vw,84px)/.92 var(--cond);text-transform:uppercase;letter-spacing:.005em}
 .rule{width:56px;height:3px;background:var(--gold);border-radius:2px;margin:16px 0 14px}
@@ -116,9 +117,8 @@ footer a:hover{color:var(--ink)}
 
 @media (min-width:720px){
   .wrap{padding:0 32px}
-  .photo{aspect-ratio:auto;height:min(76vh,700px)}
-  .photo img{object-position:42% 0}
-  .grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:56px;align-items:center;padding:4px 0 28px}
+  .photo img{object-position:center}
+  .grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:center;padding:4px 0 28px}
   .join,.card{max-width:440px}
   .card{padding:26px}
   .lede{font-size:22px}
@@ -141,15 +141,12 @@ footer a:hover{color:var(--ink)}
 
   <main class="grid">
     <figure class="photo">
-      <img id="hero" src="/assets/dr-dove.jpg" width="1040" height="1300" alt="Dr. Dove standing tall by a window, arms reaching out, waist drawn in" fetchpriority="high" decoding="async">
-      <figcaption><b aria-hidden="true"></b>Dr. Dove</figcaption>
+      <img id="hero" src="/assets/bca-cover.jpg" width="1400" height="788" alt="The Bodybuilder's Core Academy. Core control on stage, with IFBB Pro Dr. Dove." fetchpriority="high" decoding="async">
     </figure>
 
     <section aria-labelledby="t">
-      <h1 id="t"><span class="the">The Bodybuilder's</span> <span class="big">Core Academy</span></h1>
-      <div class="rule" aria-hidden="true"></div>
+      <h1 id="t" class="sr"><span class="the">The Bodybuilder's</span> <span class="big">Core Academy</span></h1>
       <p class="lede">Core control coaching for competitors: smaller waist, flatter core on stage.</p>
-      <p class="by">With IFBB Pro Dr. Dove, mom of 5.</p>
 
       <div class="join">
         <a class="btn btn-gold" href="https://www.skool.com/bca">Join the community
@@ -160,7 +157,7 @@ footer a:hover{color:var(--ink)}
       <div class="card" id="login">
         <form id="f" novalidate>
           <h2 id="lt"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="3.5" y="8.5" width="13" height="9" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 8.5V6a3.5 3.5 0 0 1 7 0v2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Athlete login</h2>
-          <p class="sub">For VIP athletes. Use the password Dove gave you.</p>
+          <p class="sub">For VIP athletes.</p>
           <label class="f" for="pw">Password</label>
           <div class="pw">
             <input id="pw" name="password" type="password" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-describedby="msg" required>
@@ -190,7 +187,7 @@ footer a:hover{color:var(--ink)}
 
 <script>
 (function(){
-  var E=[{"s":"BgvSsZr0RM/YtVDY45kRyg==","i":"iwbyXR1BGUd2PDBW","c":"T67g2Rxe0anjEaQWYEeahChsU6GWyOzDz5QBfjk="}], ITER=310000, K="bca-vip-pw";
+  var E=[{"s":"hxmX/JzyX0ONiiVP3Z7EEg==","i":"Vw7e7pwMX/aQugQZ","c":"QJH5DfTVD/qUKSe/2UgdG5pUCY7o6rdcWq8xosY="}], ITER=310000, K="bca-vip-pw";
   var BAD="That password didn't work. Check it and try again.";
   var $=function(id){return document.getElementById(id)};
   var f=$("f"),pw=$("pw"),eye=$("eye"),rem=$("rem"),go=$("go"),gl=$("golabel"),msg=$("msg"),wb=$("wb"),wgo=$("wgo"),other=$("other"),top=$("toplink"),bar=$("wbar"),hero=$("hero");
